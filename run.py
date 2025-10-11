@@ -13,7 +13,7 @@ if __name__ == '__main__':
     torch.manual_seed(fix_seed)
     np.random.seed(fix_seed)
 
-    parser = argparse.ArgumentParser(description='TimesMR')
+    parser = argparse.ArgumentParser(description='FACT')
 
     # basic config
     parser.add_argument('--task_name', type=str, required=True, default='long_term_forecast',
@@ -73,10 +73,10 @@ if __name__ == '__main__':
 
     # FACT
     parser.add_argument('--num_kernels', type=int, default=4, help='the kernels numbers of Inception block')
-    parser.add_argument('--dilation', type=int, nargs='+', default=[1,3,5,3,1], help='dilation of Inception block')  
+    parser.add_argument('--dilation', type=int, nargs='+', default=[1,2,3,2,1], help='dilation of Inception block')  
     parser.add_argument('--mode', type=str, default='no', help='CNN mode: freq or not freq')  
     parser.add_argument('--padding_mode', type=str, default='zeros', help='padding mode of CNN: zeros,replicate, reflect, circular')  
-    parser.add_argument('--core', type=float, default=0.5, help='dimension of core')
+    parser.add_argument('--core', type=float, default=0.5, help='weight of frequency and time domain')
 
     # optimization
     parser.add_argument('--num_workers', type=int, default=0, help='data loader num workers')

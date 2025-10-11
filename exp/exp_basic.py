@@ -1,8 +1,6 @@
 import os
 import torch
-from models import iTransformer, PatchTST,TimesNet, \
-        TimeFilter,AMD, TimePro,FACT,TimeMixerPP,SimpleTM, \
-        TexFilter, TQNet, TimeXer
+from models import FACT
 
 
 class Exp_Basic(object):
@@ -10,17 +8,6 @@ class Exp_Basic(object):
         self.args = args
         self.model_dict = {
             'FACT':FACT,
-            'TimeMixerPP':TimeMixerPP,
-            'SimpleTM':SimpleTM,
-            'TexFilter':TexFilter,
-            'TQNet':TQNet,
-            'TimeFilter':TimeFilter,
-            'TimePro':TimePro,
-            'TimesNet':TimesNet,
-            'PatchTST':PatchTST,
-            'iTransformer':iTransformer,
-            'TimeXer':TimeXer,
-            'AMD':AMD
         }
         if args.model == 'Mamba':
             print('Please make sure you have successfully installed mamba_ssm')

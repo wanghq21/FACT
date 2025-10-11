@@ -1,6 +1,6 @@
 import os
 import torch
-from models import TimesMR,iTransformer, PatchTST,TimesNet, \
+from models import iTransformer, PatchTST,TimesNet, \
         TimeFilter,AMD, TimePro,FACT,TimeMixerPP,SimpleTM, \
         TexFilter, TQNet, TimeXer
 
@@ -9,7 +9,6 @@ class Exp_Basic(object):
     def __init__(self, args):
         self.args = args
         self.model_dict = {
-            'TimesMR':TimesMR,
             'FACT':FACT,
             'TimeMixerPP':TimeMixerPP,
             'SimpleTM':SimpleTM,

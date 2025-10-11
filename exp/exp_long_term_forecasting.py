@@ -37,12 +37,8 @@ class Exp_Long_Term_Forecast(Exp_Basic):
 
     def _select_criterion(self):
         criterion = nn.MSELoss()
-        # criterion = MultiVariableACF_Loss(max_lag=24)
         return criterion
-    def _select_criterion2(self):
-        # criterion = nn.MSELoss()
-        criterion = MultiVariableACF_Loss(max_lag=24)
-        return criterion
+        
 
 
     def vali(self, vali_data, vali_loader, criterion):
@@ -115,7 +111,6 @@ class Exp_Long_Term_Forecast(Exp_Basic):
 
         model_optim = self._select_optimizer()
         criterion = self._select_criterion()
-        criterion2 = self._select_criterion2()
 
         if self.args.use_amp:
             scaler = torch.cuda.amp.GradScaler()

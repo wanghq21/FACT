@@ -15,23 +15,22 @@ pip install -r requirements.txt
 sh FACT.sh
 ```
 
-## Archietecture
-The archietecture of FACT is:
+## Architecture
+The architecture of FACT is:
 <p align="center">
-<img src=".\figure\archietecture.png" height = "250" alt="" align=center />
+<img src=".\figure\architecture.png" height = "450" alt="" align=center />
 <br><br>
 </p>
 
-## The overall performance on different datasets
-The archietecture of FACT is:
+## Experiments
+### The overall performance on different datasets
 <p align="center">
-<img src=".\figure\performance.png" height = "150" alt="" align=center />
+<img src=".\figure\performance.png" height = "650" alt="" align=center />
 <br><br>
 </p>
 
-## Compare with attention
-The archietecture of FACT is:
+### Compared with attention
 <p align="center">
-<img src=".\figure\compare_attention.png" height = "150" alt="" align=center />
+<img src=".\figure\compare_attention.png" height = "250" alt="" align=center />
 <br><br>
 </p>

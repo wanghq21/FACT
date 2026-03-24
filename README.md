@@ -104,7 +104,7 @@ We evaluate the proposed FACT on twelve datasets, encompassing diverse variable 
 Although averaging errors across all forecasting horizons is the standard evaluation protocol in multivariate time series forecasting, as adopted by recent representative works such as PatchTST, iTransformer, and TimeFilter, evaluation at specific target horizon H (single time step) is also important. Therefore, we report performance with several different target horizons (target time step t+H): t+3, t+6, t+12, and t+24. For a comprehensive comparison, we include several recent and competitive baselines: the latest attention-based models (iTransformer, TimeXer), the latest graph-based model (TimeFilter), and the latest Mamba-based model (TimePro).
 
 <p align="center">
-  <img src="./figure/target_horizon.png" width="100%" alt="Overall performance on the target forecasting horizon" />
+  <img src="./figure/singlehorizon.png" width="100%" alt="Overall performance on the target forecasting horizon" />
 </p>
 
 
@@ -114,7 +114,7 @@ Since our DConvBlock adopts a Transformer-like architecture, its key distinction
   <img src="./figure/compare_attention.png" width="100%" alt="Comparison with attention-based models" />
 </p>
 
-### Comparison with attention-based models
+### Comparison with other frequency-based models
 To further evaluate the effectiveness of our proposed frequency modeling design, we conduct a comprehensive comparison with several representative frequency-based models, including FreDF, FreTS, FilterNet, FITS, and Fredformer, all of which are well-known for capturing frequency-domain patterns in time series data. FACT consistently outperforms these models across all datasets. This consistent superiority not only demonstrates the effectiveness of our frequency modeling approach but also underscores the advantage of explicitly capturing fine-grained cross-variable interactions from the frequency-domain perspective.
 <p align="center">
   <img src="./figure/frequency_models.png" width="100%" alt="Comparison with attention-based models" />

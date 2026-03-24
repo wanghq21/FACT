@@ -1,6 +1,6 @@
 # FACT
 
-Official implementation of the paper **"FACT: Fine-grained Across-variable Convolution for Multivariate Time-series Forecasting" (ICLR 2026)**.
+Official implementation of the paper **"[FACT: Fine-grained Across-variable Convolution for Multivariate Time-series Forecasting](https://openreview.net/pdf?id=j3gNYqrHtl)" (ICLR 2026)**.
 
 FACT is an efficient convolution-based architecture for multivariate time series forecasting. It explicitly models **fine-grained across-variable dependencies** in both the **time domain** and the **frequency domain**, enabling strong forecasting performance while maintaining high computational efficiency.
 

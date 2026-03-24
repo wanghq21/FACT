@@ -104,7 +104,7 @@ We evaluate the proposed FACT on twelve datasets, encompassing diverse variable 
 Although averaging errors across all forecasting horizons is the standard evaluation protocol in multivariate time series forecasting, as adopted by recent representative works such as PatchTST, iTransformer, and TimeFilter, evaluation at specific target horizon H (single time step) is also important. Therefore, we report performance with several different target horizons (target time step t+H): t+3, t+6, t+12, and t+24. For a comprehensive comparison, we include several recent and competitive baselines: the latest attention-based models (iTransformer, TimeXer), the latest graph-based model (TimeFilter), and the latest Mamba-based model (TimePro).
 
 <p align="center">
-  <img src="./figure/target_horizon.png" width="100%" alt="Performance on the target forecasting horizon" />
+  <img src="./figure/target_horizon.png" width="100%" alt="Overall performance on the target forecasting horizon" />
 </p>
 
 
@@ -123,7 +123,7 @@ To further evaluate the effectiveness of our proposed frequency modeling design,
 ### Longer input length
 Longer input lengths provide models with more historical information, which, when effectively leveraged, can significantly improve forecasting accuracy. To comprehensively evaluate the ability of FACT to utilize extended historical context, we conduct experiments varying the input sequence lengths over the set {96, 192, 336, 576, 720}. Our results demonstrate that FACT consistently achieves state-of-the-art accuracy across all input lengths on both datasets. This stability and robustness indicate that FACT effectively leverages extended historical information to improve prediction quality, outperforming other models regardless of the amount of past data available.
 <p align="center">
-  <img src="./figure/longer_input.png" width="100%" alt="Comparison with attention-based models" />
+  <img src="./figure/longer_input.png" width="100%" alt="Longer input length" />
 </p>
 
 
